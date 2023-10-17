@@ -19,7 +19,7 @@ function getWeather(city, days) {
     const API_KEY = "61069fb8abf74210b7d232148231510";
 
     return fetch(
-        `${BASE_API_URL}/forecast.json?key=${API_KEY}&q=${city}&days=${days}`
+        `${BASE_API_URL}/forecast.json?key=${API_KEY}&q=${city}&days=${days}&lang=uk`
     ).then((response) => {
         if (!response.ok) {
             throw new Error(response.statusText);
